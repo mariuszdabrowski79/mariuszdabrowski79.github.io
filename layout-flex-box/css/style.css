@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+ 
+}
+
+header {
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    width: 100%;
+}
+
+.left {
+
+    color: white;
+    background-color: green;
+    text-align: center;
+
+}
+
+.right {
+    color: white;
+    text-align: center;
+    background-color: pink;
+}
+
+.section {
+ 
+    color: white;
+    text-align: center;
+    background-color: rgb(98, 208, 184);
+    width: 50%;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    background-color: violet;
+    width: 100%;
+}
+.screen {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+@media (min-width: 992px) {
+    .left,
+    .right {
+    width: 25%;
+}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .section {
+        width:80%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .left,
+    .right,
+    .section,
+    .footer {
+        width: 100%;
+    }
+}
